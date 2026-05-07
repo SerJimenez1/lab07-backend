@@ -18,7 +18,11 @@ const app = express();
 
 // Configura las opciones de CORS para permitir acceso desde el frontend
 const corsOptions = {
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: [
+        "http://localhost:5173", 
+        "http://localhost:5174",
+        "https://lab07-frontend.vercel.app"
+    ],
 };
 
 // Aplica el middleware de CORS a la aplicación
